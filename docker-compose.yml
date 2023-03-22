@@ -1,0 +1,15 @@
+version: "3.9"
+services:
+  etickerpostgres:
+    container_name: eTicker-postgres
+    image: postgres:latest
+    restart: always
+    environment:
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=j474hTUOOYj*
+      - POSTGRES_DB=etickerdb
+    ports:
+      - "5434:5434"
+    command: -p 5434
+    expose:
+      - 5434
